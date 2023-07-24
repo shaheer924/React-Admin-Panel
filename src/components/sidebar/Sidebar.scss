@@ -1,0 +1,53 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .upper-dashboard {
+        padding-left: 2vw;
+        padding-top: 5vh;
+
+        .logo {
+            color: #013CC6;
+            text-align: left;
+            font-weight: 700;
+            font-size: larger;
+        }
+
+        .dashboard-list {
+            margin-top: 5vh;
+            color: #131313;
+            padding: 0;
+            .list {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: #131313;
+                }
+
+                .list-item {
+                    padding-bottom: 4vh;
+                }
+
+            }
+
+            .active {
+                color: #013CC6;
+                border: 10px blue;
+            }
+        }
+    }
+
+    .help {
+        padding-bottom: 2vh;
+        padding-left: 2vw;
+    }
+
+}

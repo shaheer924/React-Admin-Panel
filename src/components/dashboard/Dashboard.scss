@@ -1,0 +1,61 @@
+.dashboard {
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E5E5;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    .heading {
+        padding-top: 4vh;
+
+        h4 {
+            font-weight: bold;
+        }
+    }
+
+    .filter {
+        padding-top: 2vh;
+
+        h6 {
+            padding-bottom: 0.5vh;
+        }
+
+        .input {
+            border: 1px #ADA7A7 solid;
+        }
+    }
+
+    .dashboard-box {
+        background-color: #FFFFFF;
+        padding: 10px;
+        border-radius: 8px;
+        border-radius: 2px 2px 2px 2px #F8F9FB;
+        .data-box {
+            width: 19vw;
+            height: 19vh;
+            background-color: #FFE2E6;
+            border-radius: 8px;
+            padding: 10px;
+            font-size:larger;
+            justify-content: center;
+            .ratio {
+                color: #5887EB;
+            }
+            .sales {
+                color: #525F72;
+            }
+            .bold-value {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .dashboard-graph {
+        margin-top: 2vh;
+        .barchart {
+            background-color: #FCFCFD;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    }
+}

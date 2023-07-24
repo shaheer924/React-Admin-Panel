@@ -1,0 +1,18 @@
+.top-line {
+    padding-top: 5vh;
+    
+    display: flex;
+    justify-content: space-between;
+
+    .search {
+        width: 35vw;
+    }
+
+    .user-info {
+        .profile-img {
+           border-radius: 15%;
+           background-color: white;
+        }
+    }
+
+}

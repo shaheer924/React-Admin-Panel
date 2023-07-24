@@ -1,0 +1,28 @@
+.patient {
+    width: 100vw;
+    height: 100vh;
+    background-color: #E5E5E5;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    .heading {
+        padding-top: 4vh;
+
+        h4 {
+            font-weight: bold;
+        }
+    }
+
+    .filter {
+        padding-top: 2vh;
+
+        h6 {
+            padding-bottom: 0.5vh;
+        }
+
+        .input {
+            border: 1px #ADA7A7 solid;
+        }
+    }
+
+}
