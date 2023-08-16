@@ -51,11 +51,18 @@
     }
 
     .dashboard-graph {
-        margin-top: 2vh;
+        margin-top: 1vh;
         .barchart {
             background-color: #FCFCFD;
             padding: 10px;
             border-radius: 8px;
+        }
+        .piechart {
+            background-color: #FCFCFD;
+            padding: 10px;
+            border-radius: 8px;
+            width: 35vw;
+            height: 35vh;
         }
     }
 }

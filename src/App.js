@@ -1,7 +1,7 @@
 import Sidebar from "./components/sidebar/Sidebar";
 import './App.scss'
 import Dashboard from "./components/dashboard/Dashboard";
-import Patient from "./components/patient/Patient";
+// import Patient from "./components/patient/Patient";
 
 function App() {
   return (

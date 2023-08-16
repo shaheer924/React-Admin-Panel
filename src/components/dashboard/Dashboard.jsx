@@ -1,27 +1,31 @@
 import React from 'react'
 import './Dashboard.scss'
-import Form from 'react-bootstrap/Form';
 import Topbar from '../topbar/Topbar';
 import { Row, Col } from 'react-bootstrap';
-import CustomTables from '../tables/CustomTables';
 import { GrDeliver, GrUserAdd } from 'react-icons/gr'
 import { BsTags, BsBarChart } from 'react-icons/bs'
 
 import {
     Chart as ChartJS,
+    ArcElement,
     CategoryScale,
     LinearScale,
+    PointElement,
+    LineElement,
     BarElement,
     Title,
     Tooltip,
     Legend,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
 
 ChartJS.register(
     CategoryScale,
     LinearScale,
     BarElement,
+    ArcElement,
+    PointElement,
+    LineElement,
     Title,
     Tooltip,
     Legend
@@ -32,7 +36,7 @@ export const options = {
     plugins: {
         legend: {
             position: 'bottom',
-            
+
         },
 
     },
@@ -54,6 +58,7 @@ export const data = {
             data: [4, 5, 3, 9, 0.6, 2, 7],
             backgroundColor: '#00E097',
             borderRadius: 4,
+            borderWidth: 1
         },
     ],
 };
@@ -125,8 +130,12 @@ function Dashboard() {
                             <Bar options={options} data={data} />
                         </div>
                     </Col>
-                    <Col></Col>
-                    <Col></Col>
+                    <Col>
+                        <div className='piechart'>
+                            <Line options={options} data={data} />
+                        </div>
+                    </Col>
+                    
                 </Row>
 
             </div>
